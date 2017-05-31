@@ -162,7 +162,7 @@ out$old <- old
 ord <- order(fitness.old)
 out$pop <- matrix(0,nrow=popsize,ncol=k)
 for (i in 1:popsize) {
-    out$pop[i,] = sort(pop[ord[i],])
+    out$pop[i,] = pop[ord[i],]
 }
 # Return the objfun values for the final population.
 out$obj <- fitness.old[ord]
